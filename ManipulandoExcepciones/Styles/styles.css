@@ -1,0 +1,44 @@
+﻿/*Por ID*/
+#registrationForm
+{
+    width: 300px;
+    background-color: beige;
+}
+#form-container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*por clase*/
+.form-title {
+    text-align: center;
+    color: green;
+}
+
+.submit-button
+{
+    width: 100%;
+    background-color:saddlebrown;
+    color:white;
+}
+
+    .submit-button:hover {
+        background-color: turquoise;
+    }
+
+/*por atributo*/
+input [type="text"]
+{
+    padding: 10px;
+    color: dimgray;
+}
