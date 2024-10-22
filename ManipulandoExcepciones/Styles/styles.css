@@ -1,9 +1,4 @@
-﻿/*Por ID*/
-#registrationForm
-{
-    width: 300px;
-    background-color: beige;
-}
+﻿/* Estilos aplicados por ID */
 #form-container {
     width: 300px;
     margin: 0 auto;
@@ -13,32 +8,38 @@
     background-color: #f9f9f9;
 }
 
+/* Estilos aplicados por clase */
+.form-title {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    .submit-button:hover {
+        background-color: #45a049;
+    }
+
+/* Estilos aplicados por atributo */
+input[type="text"], input[type="email"], input[type="password"], input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
 .error-message {
     color: red;
     text-align: center;
     font-weight: bold;
-}
-
-/*por clase*/
-.form-title {
-    text-align: center;
-    color: green;
-}
-
-.submit-button
-{
-    width: 100%;
-    background-color:saddlebrown;
-    color:white;
-}
-
-    .submit-button:hover {
-        background-color: turquoise;
-    }
-
-/*por atributo*/
-input [type="text"]
-{
-    padding: 10px;
-    color: dimgray;
 }

@@ -10,28 +10,27 @@
 </head>
 <body>
     <div id="form-container">
-         <h1 class="form-title">Formulario de Registro</h1>
+        <h2 class="form-title">Formulario de Registro</h2>
         <form id="registrationForm" onsubmit="return validateForm()">
-           
-            <label>Nombre: </label>
-            <input type="text" id="name" required /><br />
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
 
-            <label>Correo electrónico: </label>
-            <input type="email" id="email" required /><br />
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
 
-            <label>Edad: </label>
-            <input type="number" id="age" required /><br />
+            <label for="age">Edad:</label>
+            <input type="number" id="age" name="age" min="1" required>
 
-            <label>Contraseña: </label>
-            <input type="text" id="password" required /><br />
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
 
-            <label>Confirmar contraseña: </label>
-            <input type="text" id="confirm-password" required /><br />
+            <label for="confirm-password">Confirmar Contraseña:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
 
-            <input type="submit" value="Registrar" class="submit-button" />
-
+            <input type="submit" value="Enviar" class="submit-button">
         </form>
-        <p id="error-message" class=""></p>
+
+        <p id="error-message" class="error-message"></p>
     </div>
     <script src="../ScriptsCode/script.js"></script>
 </body>
